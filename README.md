@@ -118,4 +118,4 @@ This project is pre-release. Before publishing, see [RELEASE_CHECKLIST.md](RELEA
 
 ## License
 
-No license has been selected yet.
+MIT. See [LICENSE](LICENSE).
