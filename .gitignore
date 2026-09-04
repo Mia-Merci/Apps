@@ -1,0 +1,26 @@
+.DS_Store
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Xcode
+DerivedData/
+*.xcuserstate
+*.xcuserdata/
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+# Local build outputs
+work/
+outputs/
+
+# Local credentials and runtime data
+.env
+.env.*
+auth.json
+usage.json
+
+# Logs
+*.log
