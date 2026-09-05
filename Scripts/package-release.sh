@@ -10,7 +10,8 @@ zip_path="$outputs_dir/CodexQuotaBar.zip"
 
 mkdir -p "$outputs_dir"
 rm -f "$zip_path"
+xattr -cr "$app_path" 2>/dev/null || true
 
-ditto -c -k --sequesterRsrc --keepParent "$app_path" "$zip_path"
+ditto -c -k --norsrc --noextattr --noqtn --noacl --keepParent "$app_path" "$zip_path"
 
 echo "$zip_path"

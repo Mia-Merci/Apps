@@ -29,7 +29,7 @@
 		A20000000000000000000008 /* App/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = App/Info.plist; sourceTree = "<group>"; };
 		A20000000000000000000009 /* Sources/CodexQuotaBar/Models/ToppingStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/CodexQuotaBar/Models/ToppingStyle.swift; sourceTree = "<group>"; };
 		A20000000000000000000010 /* Sources/CodexQuotaBar/Views/CookieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/CodexQuotaBar/Views/CookieView.swift; sourceTree = "<group>"; };
-		A20000000000000000000011 /* Resources/CodexQuotaBar.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Resources/CodexQuotaBar.icns; sourceTree = "<group>"; };
+		A20000000000000000000011 /* CodexQuotaBar.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CodexQuotaBar.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 		A40000000000000000000005 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A20000000000000000000011 /* Resources/CodexQuotaBar.icns */,
+				A20000000000000000000011 /* CodexQuotaBar.icns */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

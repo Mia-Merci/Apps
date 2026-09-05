@@ -96,9 +96,17 @@ The release archive is created at:
 outputs/CodexQuotaBar.zip
 ```
 
-Upload this ZIP to a GitHub Release so users can download, unzip, and run `CodexQuotaBar.app` without opening Xcode.
+Upload this ZIP to a GitHub Release so users can download, unzip, and run `CodexQuotaBar.app` without opening Xcode. The release build is universal and supports both Apple Silicon and Intel Macs.
 
 Unsigned builds may show a macOS Gatekeeper warning on first launch. A smoother public release requires Developer ID signing and Apple notarization.
+
+If macOS blocks the app on first launch, try:
+
+1. Move `CodexQuotaBar.app` to `/Applications`.
+2. Control-click or right-click the app and choose Open.
+3. If macOS still blocks it, open System Settings → Privacy & Security and allow the app there.
+
+For normal double-click installation without these warnings, distribute a Developer ID signed and notarized build.
 
 ## Local fallback data
 
