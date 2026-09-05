@@ -83,6 +83,23 @@ The app bundle is created at:
 outputs/CodexQuotaBar.app
 ```
 
+## Create a downloadable ZIP
+
+```bash
+chmod +x Scripts/package-release.sh
+Scripts/package-release.sh
+```
+
+The release archive is created at:
+
+```text
+outputs/CodexQuotaBar.zip
+```
+
+Upload this ZIP to a GitHub Release so users can download, unzip, and run `CodexQuotaBar.app` without opening Xcode.
+
+Unsigned builds may show a macOS Gatekeeper warning on first launch. A smoother public release requires Developer ID signing and Apple notarization.
+
 ## Local fallback data
 
 If live sync fails, the app can read fallback data from:

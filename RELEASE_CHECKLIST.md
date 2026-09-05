@@ -8,11 +8,13 @@ Before publishing CodexQuotaBar on GitHub:
 - [ ] Confirm live Codex quota sync works after signing in to Codex Desktop.
 - [ ] Run `Scripts/probe-codex-usage.mjs` and verify it does not print tokens.
 - [ ] Run `Scripts/build-app.sh` and confirm `outputs/CodexQuotaBar.app` launches.
+- [ ] Run `Scripts/package-release.sh` and confirm `outputs/CodexQuotaBar.zip` is created.
 - [ ] Add screenshots or a short GIF to the README.
-- [ ] Choose a license before public release, such as MIT or Apache-2.0.
+- [x] Choose a license.
 - [ ] Review `PRIVACY.md`.
+- [ ] Optional for smoother public distribution: Developer ID sign and notarize the app.
 - [ ] Create the GitHub repository.
-- [ ] Create a first release zip from `outputs/CodexQuotaBar.app`.
+- [ ] Upload `outputs/CodexQuotaBar.zip` to a GitHub Release.
 
 Suggested first tag:
 

@@ -3,12 +3,16 @@ set -euo pipefail
 
 package_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 build_dir="$package_root/.build/release"
+cache_dir="$package_root/.build/cache"
 app_dir="$package_root/outputs/CodexQuotaBar.app"
 contents_dir="$app_dir/Contents"
 macos_dir="$contents_dir/MacOS"
 
 cd "$package_root"
-swift build -c release
+mkdir -p "$cache_dir/clang-module-cache" "$cache_dir/swiftpm-module-cache"
+export CLANG_MODULE_CACHE_PATH="$cache_dir/clang-module-cache"
+export SWIFTPM_MODULECACHE_OVERRIDE="$cache_dir/swiftpm-module-cache"
+swift build --disable-sandbox -c release
 
 rm -rf "$app_dir"
 mkdir -p "$macos_dir"
