@@ -15,6 +15,7 @@
 		A10000000000000000000007 /* Sources/CodexQuotaBar/Views/QuotaPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* Sources/CodexQuotaBar/Views/QuotaPopover.swift */; };
 		A10000000000000000000008 /* Sources/CodexQuotaBar/Models/ToppingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000009 /* Sources/CodexQuotaBar/Models/ToppingStyle.swift */; };
 		A10000000000000000000009 /* Sources/CodexQuotaBar/Views/CookieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000010 /* Sources/CodexQuotaBar/Views/CookieView.swift */; };
+		A10000000000000000000010 /* Resources/CodexQuotaBar.icns in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000011 /* Resources/CodexQuotaBar.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A20000000000000000000008 /* App/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = App/Info.plist; sourceTree = "<group>"; };
 		A20000000000000000000009 /* Sources/CodexQuotaBar/Models/ToppingStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/CodexQuotaBar/Models/ToppingStyle.swift; sourceTree = "<group>"; };
 		A20000000000000000000010 /* Sources/CodexQuotaBar/Views/CookieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/CodexQuotaBar/Views/CookieView.swift; sourceTree = "<group>"; };
+		A20000000000000000000011 /* Resources/CodexQuotaBar.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Resources/CodexQuotaBar.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			children = (
 				A40000000000000000000002 /* App */,
 				A40000000000000000000003 /*  */,
+				A40000000000000000000005 /* Resources */,
 				A40000000000000000000004 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +84,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A40000000000000000000005 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000011 /* Resources/CodexQuotaBar.icns */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,6 +100,7 @@
 			buildConfigurationList = A90000000000000000000003 /* Build configuration list for PBXNativeTarget "CodexQuotaBar" */;
 			buildPhases = (
 				A70000000000000000000001 /* Sources */,
+				A70000000000000000000002 /* Resources */,
 				A30000000000000000000001 /* Frameworks */,
 			);
 			buildRules = (
@@ -132,6 +144,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A70000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000010 /* Resources/CodexQuotaBar.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A70000000000000000000001 /* Sources */ = {
